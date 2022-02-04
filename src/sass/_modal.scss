@@ -452,6 +452,38 @@
   // }
   &--team {
     height: auto;
+    .modal__team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: #d41342;
+      border-radius: 22px;
+      padding-left: 17px;
+      height: 44px;
+      color: #ffffff;
+      border: none;
+      // outline: none;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-left: 10px;
+      width: 183px;
+      margin: 10px auto 0 auto;
+      transition: all 250ms linear;
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        background: #c7133e;
+        transform: scale(1.2);
+        transition: all 250ms linear;
+      }
+    }
   }
   @media screen and (min-width: 768px) {
     width: 720px;
