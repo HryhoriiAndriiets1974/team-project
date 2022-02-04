@@ -1,0 +1,97 @@
+.menu-button  {
+    position: absolute;
+    border          : none;
+    background-color: transparent;
+    top: 25px;
+    cursor: pointer;
+    right: 25px; 
+      @media screen and (min-width: 768px) {
+     left: 25px;
+  }
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+
+}
+
+
+.menu-button-burger.is-open .menu-button__icon--cross {
+    display: none;
+}
+
+.menu-button-burger {
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+    }
+    background-color: transparent;
+    border          : none;
+    cursor          : pointer;
+    margin-left     : 61px;
+    z-index         : 10;
+    @media screen and (min-width: 768px) {
+        margin-left: 291px;
+    }
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+  
+}
+.page-header__nav {
+
+@media screen and (max-width:767px) {
+  display: none;  
+ top     : 110%;
+ left:  0;
+  
+    }
+        @media screen and (min-width: 768px) and (max-width: 1279px){
+ top : -37px;
+right: 0;     
+
+    }
+
+@media screen and (max-width: 1279px) {
+ transform: translateX(50%); 
+display: block;
+ position: absolute;
+ height  : 100vh;
+ padding: 24px;
+background-color: #E17992;
+opacity: 0;
+transition: transform 300ms linear, opacity 300ms linear;
+}
+@media screen and (max-width: 767px) {
+    transform       : translateX(-50%);
+   
+}
+}
+.page-header__nav.is-open{
+    transform: translateX(0%);
+    width: 254px;
+
+    @media screen and (max-width: 1279px) {
+    z-index: 300;
+    opacity: 1;
+}}
+  
+.page-header__button-mobile {
+@include button();
+    @media screen and (max-width: 479px) {
+        width: 80%;
+       margin-left: auto;
+       margin-right: auto;
+    }
+margin-top: 40px;
+width: 100%;
+justify-content: center;
+&-icon {
+    margin-left: 12px;
+}
+&:hover,
+&:focus {
+    background: #ecebeb;
+}
+    @media screen and (min-width: 1280px)  {
+display: none;
+}
+}
