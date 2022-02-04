@@ -21,9 +21,9 @@
   /* Скрываем окна  */
   opacity: 0;
   visibility: hidden;
-@media screen and (max-width:767px) {
-  top: 58%;
-}
+  @media screen and (max-width: 767px) {
+    top: 58%;
+  }
   /*  Установаем ширину окна  */
   width: 100%;
   // max-width: 500px;
@@ -442,7 +442,6 @@
     padding: 5px;
     border-radius: 5px;
   }
-
   // @media screen and (min-width: 480px) {
   //   width: 280px;
   //   &--locations {
@@ -451,6 +450,9 @@
   //     padding: 5px 8px;
   //   }
   // }
+  &--team {
+    height: auto;
+  }
   @media screen and (min-width: 768px) {
     width: 720px;
     font-size: 22px;

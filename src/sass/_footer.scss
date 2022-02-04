@@ -3,20 +3,20 @@
   padding-top: 113px;
   padding-bottom: 25px;
   @media screen and(min-width: 768px) {
-     padding-bottom: 18px;
-     padding-top: 165px;
+    padding-bottom: 18px;
+    padding-top: 165px;
   }
-    @media screen and(min-width: 1280px) {
+  @media screen and(min-width: 1280px) {
     padding-bottom: 10px;
   }
 }
 .footer__main {
-     @media screen and(max-width: 767px) {
-     margin-bottom: 43px;
-   }
-   @media screen and(min-width: 1280px) {
-   margin-bottom: 97px;
- }
+  @media screen and(max-width: 767px) {
+    margin-bottom: 43px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-bottom: 97px;
+  }
   @media screen and(min-width: 768px) {
     margin-bottom: 91px;
     display: flex;
@@ -24,21 +24,21 @@
   }
 }
 .footer__text {
-@media screen and (max-width: 767px) {
-  margin-bottom: 43px;
-}
- 
-    @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 768px) {
     width: 340px;
   }
-   @media screen and (min-width: 1280px) {
-   width: 472px;
- }
+  @media screen and (min-width: 1280px) {
+    width: 472px;
+  }
 }
 .footer__first-text {
   @media screen and (max-width: 767px) {
-  width: 232px;
-}
+    width: 232px;
+  }
   align-items: flex-start;
   @include secondary-text($fw: 400, $fs: 18px, $lx: 1.16, $color: $bckg-color-accent, $ls: 0.04px);
   @media screen and (min-width: 768px) {
@@ -63,7 +63,7 @@
   }
 }
 .footer__second-text {
-    @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     width: 200px;
   }
   align-items: flex-start;
@@ -72,11 +72,9 @@
     margin-top: 17px;
   }
   @media screen and (min-width: 768px) {
-   
     @include secondary-text($fw: 400, $fs: 48px, $lx: 1.14, $color: $accent-color, $ls: 0.04px);
   }
   @media screen and (min-width: 1280px) {
-
     @include secondary-text($fw: 400, $fs: 58px, $lx: 1.14, $color: $accent-color, $ls: 0.04px);
   }
 }
@@ -93,10 +91,10 @@
 .media-footer__social-link {
   display: flex;
   margin-bottom: 46px;
- justify-content: flex-end;
-@media screen and (min-width:768px) {
-  margin-bottom: 50px;
-}
+  justify-content: flex-end;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
   .media-footer__zone:not(:last-child) {
     margin-right: 24px;
   }
@@ -110,7 +108,7 @@
   }
 }
 .footer__contact {
-     @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     text-align: end;
   }
 }
@@ -124,14 +122,12 @@
   }
 }
 .footer__contact-text__tel {
- 
   @include main-text($fw: 700, $fs: 12px, $lx: 1.86, $color: $accent-color, $ls: 0.04px);
   @media screen and (min-width: 768px) {
     @include main-text($fw: 700, $fs: 14px, $lx: 1.86, $color: $accent-color, $ls: 0.04px);
   }
   @media screen and (min-width: 1280px) {
     @include main-text($fw: 700, $fs: 16px, $lx: 1.86, $color: $accent-color, $ls: 0.04px);
-    
   }
 }
 .footer__text-rights {
@@ -145,5 +141,7 @@
     width: 100%;
   }
 }
-
-
+.footer__text-rights:hover,
+.footer__text-rights:focus {
+  cursor: pointer;
+}
